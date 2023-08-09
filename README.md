@@ -12,3 +12,7 @@ In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript l
 - Information extraction and manipulation of the DOM tree
 - Object-oriented programming
 - Functional programming
+
+## Certificate
+
+![JS Advanced - January 2022 - Certificate](https://github.com/yopopova/JavaScript_Advanced_SoftUni/assets/59256039/8ac55ace-ad65-4eb9-9d1f-fe600b548a12)
