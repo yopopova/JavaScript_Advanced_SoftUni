@@ -1,8 +1,6 @@
 const isOddOrEven = require('./02-even-or-odd.js');
 const { assert } = require('chai');
 
-// В Judge предаваме САМО 'describe'!!!
-
 describe('isOddOrEven function tests', () => {
 
     // Invalid input tests
@@ -35,11 +33,4 @@ describe('isOddOrEven function tests', () => {
     it('Should return odd as result.', () => {
         assert.equal(isOddOrEven('Hello'), 'odd');
     });
-
-
-    // Broken test
-    // it('Should return odd as result.', () => {
-    //     assert.equal(isOddOrEven('Hell'), 'odd');
-    // });
-
 });
