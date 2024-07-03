@@ -25,11 +25,14 @@ function attachEventsListeners() {
             minutes: days * rations.minutes,
             seconds: days * rations.seconds
         };
+
+        // ^ This function returns an object.
     }
 
     function onConvert(event) {
         let input = event.target.parentElement.querySelector('input[type="text"]');
-
+        // ^ This is how we intercept a specific element from the parent.
+        
         let time = convert(Number(input.value), input.id);
 
         days.value = time.days;

@@ -25,3 +25,6 @@ function equalNeighbors(matrix) {
 
     return count;
 }
+
+let result = equalNeighbors([['test', 'yes', 'yo', 'ho'], ['well', 'done', 'yo', '6'], ['not', 'done', 'yet', '5']]);
+console.log(result);

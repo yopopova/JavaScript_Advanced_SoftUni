@@ -17,3 +17,6 @@ function biggestElement(matrix) {
 
     return biggestNum;
 }
+
+let result = biggestElement([[20, 50, 10], [8, 33, 145]]);
+console.log(result);

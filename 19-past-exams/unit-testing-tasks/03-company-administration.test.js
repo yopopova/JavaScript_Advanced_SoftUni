@@ -60,6 +60,10 @@ describe('Test the functionality of companyAdministration object', () => {
             assert.throw(() => { companyAdministration.firedEmployee('nice', 1), 'Invalid input'; });
         });
 
+        // it('Should throw an error, if employees is empty array', () => {
+        //     assert.throw(() => {companyAdministration.firedEmployee([], 0), 'Invalid input';});
+        // }); // ???
+
         it('Should throw an error, if index is string', () => {
             assert.throw(() => { companyAdministration.firedEmployee(['Dimitar', 'Irina', 'Maria'], 'Hi!'), 'Invalid input'; });
         });
@@ -82,4 +86,6 @@ describe('Test the functionality of companyAdministration object', () => {
             assert.equal(companyAdministration.firedEmployee(['Dimitar', 'Irina', 'Maria'], 1), 'Dimitar, Maria');
         });
     });
-})
+});
+
+// .\node_modules\.bin\mocha .\03-company-administration.test.js

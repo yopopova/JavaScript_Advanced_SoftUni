@@ -27,7 +27,7 @@ function solution() {
 
         let arr = Array.from(listOfGifts.querySelectorAll('li'))
             .sort((a, b) => a.textContent.localeCompare(b.textContent))
-            .forEach(x => listOfGifts.appendChild(x));
+            .forEach(x => listOfGifts.appendChild(x)); // If we don't pin the elements, they won't sort properly.
 
         inputElement.value = '';
 
@@ -35,9 +35,10 @@ function solution() {
     }
 
     function buttons(btn) {
-        let item = btn.target.parentNode;
-        item.lastElementChild.remove();
-        item.lastElementChild.remove();
+        let item = btn.target.parentNode; // So we get the entire row, not just the specific button that was pressed.
+        item.lastElementChild.remove(); // Removes one button first.
+        item.lastElementChild.remove(); // Then removes the other one as well.
+        // Because we only need to move the names of the gifts along the lists.
 
         if (btn.target.textContent === 'Send') {
             sentGifts.appendChild(item);

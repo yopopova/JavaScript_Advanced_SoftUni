@@ -56,3 +56,8 @@ function roadRadar(speed, area) {
         console.log(`The speed is ${diff} km/h faster than the allowed speed of ${max} - reckless driving`);
     }
 }
+
+roadRadar(40, 'city');
+roadRadar(21, 'residential');
+roadRadar(120, 'interstate');
+roadRadar(200, 'motorway');

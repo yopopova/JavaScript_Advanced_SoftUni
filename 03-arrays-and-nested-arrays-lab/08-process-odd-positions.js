@@ -14,3 +14,6 @@ function processOddPositions(arr) {
     let reversedArr = newArr.reverse();
     return reversedArr.join(' ');
 }
+
+let result = processOddPositions([10, 15, 20, 25]);
+console.log(result);

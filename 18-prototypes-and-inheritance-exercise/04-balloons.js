@@ -8,7 +8,7 @@ function balloons() {
 
     class PartyBalloon extends Balloon {
         constructor(color, hasWeight, ribbonColor, ribbonLength) {
-            super(color, hasWeight);
+            super(color, hasWeight); // This is how we inherit stuff from the top class.
             this.ribbonColor = ribbonColor;
             this.ribbonLength = ribbonLength;
             this._ribbon = { color: ribbonColor, length: ribbonLength };
@@ -36,3 +36,11 @@ function balloons() {
         BirthdayBalloon
     }
 }
+
+let classes = balloons();
+let testBalloon = new classes.Balloon("yellow", 20.5);
+let testPartyBalloon = new classes.PartyBalloon("yellow", 20.5, "red", 10.25);
+let ribbon = testPartyBalloon.ribbon;
+console.log(testBalloon);
+console.log(testPartyBalloon);
+console.log(ribbon);

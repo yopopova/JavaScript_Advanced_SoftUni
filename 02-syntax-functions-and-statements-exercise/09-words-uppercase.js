@@ -11,3 +11,6 @@ function wordsUppercase(str) {
 
     console.log(arrUpperCase.join(', '));
 }
+
+wordsUppercase('Hi, how are you?');
+wordsUppercase('hello');

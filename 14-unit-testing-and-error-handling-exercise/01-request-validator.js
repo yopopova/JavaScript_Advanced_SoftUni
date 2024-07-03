@@ -2,8 +2,9 @@ function requestValidator(obj) {
     let validMethods = ['GET', 'POST', 'DELETE', 'CONNECT'];
     let validVersions = ['HTTP/0.9', 'HTTP/1.0', 'HTTP/1.1', 'HTTP/2.0'];
     let uriRegex = /^\w+\.\w+\.\w+$/m;
-    let messageText = /[<>\&'"]+/gm;
+    let messageText = /[<>\&'"]+/gm; // /[<>\&\'"]+/;
 
+    // The road conditions of the 'if' checks that it is not 'false'.
     if (!obj.method || !validMethods.includes(obj.method)) {
         throw new Error(`Invalid request header: Invalid Method`);
     }
@@ -22,3 +23,10 @@ function requestValidator(obj) {
 
     return obj;
 }
+
+requestValidator({
+    method: 'GET',
+    uri: 'svn.public.catalog',
+    version: 'HTTP/1.1',
+    message: ''
+});

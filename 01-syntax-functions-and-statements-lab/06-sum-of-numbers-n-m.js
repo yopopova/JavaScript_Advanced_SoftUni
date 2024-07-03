@@ -9,3 +9,6 @@ function sumOfNumbers(n, m) {
 
     console.log(sum);
 }
+
+sumOfNumbers('1', '5');
+sumOfNumbers('-8', '20');

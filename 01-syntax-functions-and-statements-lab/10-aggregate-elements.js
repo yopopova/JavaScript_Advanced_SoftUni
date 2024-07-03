@@ -16,3 +16,6 @@ function aggregateElements(arr) {
     console.log(sumInversedValues);
     console.log(concat);
 }
+
+aggregateElements([1, 2, 3]);
+aggregateElements([2, 4, 8, 16]);

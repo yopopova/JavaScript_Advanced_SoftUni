@@ -79,4 +79,6 @@ describe('Test the functionality of bookSelection object', () => {
             assert.equal(bookSelection.suitableTitles([{ title: "The Da Vinci Code", genre: "Thriller" }, { title: "Ouija", genre: "Horror" }], 'Horror'), ('Ouija'));
         });
     });
-})
+});
+
+// .\node_modules\.bin\mocha .\03-book-selection.test.js

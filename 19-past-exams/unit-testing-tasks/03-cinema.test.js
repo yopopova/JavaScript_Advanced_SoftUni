@@ -84,4 +84,6 @@ describe('Test the functionality of cinema object', () => {
             assert.equal(cinema.swapSeatsInHall(13, 4), 'Successful change of seats in the hall.');
         });
     });
-})
+});
+
+// .\node_modules\.bin\mocha .\03-cinema.test.js

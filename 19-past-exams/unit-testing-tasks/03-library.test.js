@@ -64,4 +64,6 @@ describe('Test the functionality of library object', () => {
             assert.equal(library.arrangeTheBooks(25), 'Great job, the books are arranged.');
         });
     });
-})
+});
+
+// .\node_modules\.bin\mocha .\03-library.test.js

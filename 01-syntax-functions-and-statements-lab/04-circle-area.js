@@ -9,3 +9,6 @@ function circleArea(arg) {
         console.log(`We can not calculate the circle area, because we receive a ${argType}.`);
     }
 }
+
+circleArea(5);
+circleArea('name');

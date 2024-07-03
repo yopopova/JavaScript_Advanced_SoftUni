@@ -57,4 +57,6 @@ describe('Test the functionality of flowerShop object', () => {
             assert.equal(flowerShop.sellFlowers(["Rose", "Lily", "Orchid"], 1), 'Rose / Orchid');
         });
     });
-})
+});
+
+// .\node_modules\.bin\mocha .\03-flowers-shop.test.js

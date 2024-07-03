@@ -51,3 +51,6 @@ function cookingByNumbers(num, p1, p2, p3, p4, p5) {
         }
     }
 }
+
+cookingByNumbers('32', 'chop', 'chop', 'chop', 'chop', 'chop');
+cookingByNumbers('9', 'dice', 'spice', 'chop', 'bake', 'fillet');

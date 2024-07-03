@@ -19,3 +19,6 @@ function sameNumbers(input) {
     console.log(isSame);
     console.log(sumOfDigits);
 }
+
+sameNumbers(2222222);
+sameNumbers(1234);

@@ -10,3 +10,7 @@ function dayOfWeek(day) {
         default: console.log('error');
     }
 }
+
+dayOfWeek('Monday');
+dayOfWeek('Friday');
+dayOfWeek('Invalid');

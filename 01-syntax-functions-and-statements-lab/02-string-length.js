@@ -11,3 +11,6 @@ function stringLength(arg1, arg2, arg3) {
     console.log(sumL);
     console.log(average);
 }
+
+stringLength('chocolate', 'ice cream', 'cake');
+stringLength('pasta', '5', '22.3');

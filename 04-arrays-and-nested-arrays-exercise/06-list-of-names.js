@@ -10,3 +10,5 @@ function listOfNames(arr) {
         console.log(`${i + 1}.${currentName}`);
     }
 }
+
+listOfNames(["John", "Bob", "Christina", "Ema"]);

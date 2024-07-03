@@ -18,5 +18,6 @@ function create(input) {
 
    function showParagraphs(event) {
       event.target.children[0].style.display = 'inline-block';
+      // ^ event.target - what we catch when we click
    }
 }

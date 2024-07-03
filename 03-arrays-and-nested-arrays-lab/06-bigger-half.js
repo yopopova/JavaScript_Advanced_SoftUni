@@ -8,3 +8,6 @@ function biggerHalf(input) {
 
     return newArr;
 }
+
+let result = biggerHalf([4, 7, 2, 5]);
+console.log(result);

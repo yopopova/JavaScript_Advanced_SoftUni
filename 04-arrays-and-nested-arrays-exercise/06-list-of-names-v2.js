@@ -10,3 +10,5 @@ function listOfNames(arr) {
         orderNum++;
     });
 }
+
+listOfNames(["John", "Bob", "Christina", "Ema"]);

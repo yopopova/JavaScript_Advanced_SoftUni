@@ -15,3 +15,6 @@ function lastKNumbersSequence(n, k) {
 
     return arr;
 }
+
+let result = lastKNumbersSequence(6, 3);
+console.log(result);

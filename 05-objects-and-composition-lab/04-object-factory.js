@@ -44,3 +44,6 @@ const orders = [
         parts: ['play']
     }
 ];
+
+const products = factory(library, orders);
+console.log(products);

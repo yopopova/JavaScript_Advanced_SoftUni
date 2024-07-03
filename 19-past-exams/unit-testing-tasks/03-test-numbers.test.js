@@ -54,4 +54,6 @@ describe('Test the functionality of testNumbers object', () => {
             assert.equal(testNumbers.averageSumArray([1, 2, 3]), 2);
         });
     });
-})
+});
+
+// .\node_modules\.bin\mocha .\03-test-numbers.test.js

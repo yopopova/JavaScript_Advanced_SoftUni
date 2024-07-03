@@ -6,6 +6,9 @@ describe('lookupChar function tests', () => {
     // Valid tests
     it('Return char at index', () => {
         assert.equal(lookupChar('Love', 0), 'L');
+        // assert(lookupChar('Love', 0) === 'L'); // Another variation of the above check.
+        // expect(lookupChar('Love', 0)).to.equal('L'); // Variant with 'expect' replacing 'assert'.
+        // In this variant, however, we also need to add 'expect' above the {} of 'assert'.
     });
 
     it('Return char at index', () => {
@@ -13,7 +16,7 @@ describe('lookupChar function tests', () => {
     });
 
     it('Return char at index', () => {
-        assert.equal(lookupChar('L', 0), 'L');
+        assert.equal(lookupChar('L', 0), 'L'); // A string of 1 element.
     });
 
 
@@ -27,8 +30,12 @@ describe('lookupChar function tests', () => {
     });
 
     it('Empty string as first parameter', () => {
-        assert.equal(lookupChar('', 0), 'Incorrect index');
+        assert.equal(lookupChar('', 0), 'Incorrect index'); // !!! IMPORTANT TEST FOR EMPTY STRING !!!
     });
+
+    // let str = '';
+    // console.log(str[0]);
+    // ^ Because if we type this the console will return 'undefined'.
 
     it('Return undefined if first parameter is not string', () => {
         assert.equal(lookupChar(100, 10), undefined);

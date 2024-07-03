@@ -6,13 +6,16 @@ class Stringer {
 
     increase(length) {
         this.innerLength += length;
+        // ^ Add the given length to the original length.
     }
 
     decrease(length) {
         this.innerLength -= length;
+        // ^ Subtract the given length from the original length.
 
         if (this.innerLength < 0) {
             this.innerLength = 0;
+            // ^ If by chance the length becomes a negative number, we return it to 0.
         }
     }
 
@@ -26,3 +29,15 @@ class Stringer {
         }
     }
 }
+
+let test = new Stringer("Test", 5);
+console.log(test.toString()); // Test
+
+test.decrease(3);
+console.log(test.toString()); // Te...
+
+test.decrease(5);
+console.log(test.toString()); // ...
+
+test.increase(4);
+console.log(test.toString()); // Test

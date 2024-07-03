@@ -18,11 +18,19 @@ function ticketSorter(tickets, sorting) {
         result.push(currTicket);
     });
 
+    // result.forEach((el) => console.log(el));
+
     return result.sort((a, b) => {
-        if (typeof a[sorting] === 'number') {
-            return a[sorting] - b[sorting];
+        if (typeof a[sorting] === 'number') { // 'a[sorting]' - the word that comes as a parameter from the 'sorting' variable is an object key, so we write it in [].
+            return a[sorting] - b[sorting]; // If our criteria is 'price', we sort by numbers in ascending order.
         } else {
-            return a[sorting].localeCompare(b[sorting]);
+            return a[sorting].localeCompare(b[sorting]); // If our criteria is 'destination' or 'status', we sort alphabetically.
         }
     });
 }
+
+ticketSorter(['Philadelphia|94.20|available',
+    'New York City|95.99|available',
+    'New York City|95.99|sold',
+    'Boston|126.20|departed'],
+    'destination');

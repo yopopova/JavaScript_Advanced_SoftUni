@@ -7,3 +7,7 @@ function sortAnArrayByTwoCriteria(arr) {
         console.log(word);
     });
 }
+
+// sortAnArrayByTwoCriteria(['alpha', 'beta', 'gamma']);
+// sortAnArrayByTwoCriteria(['Isacc', 'Theodor', 'Jack', 'Harrison', 'George']);
+sortAnArrayByTwoCriteria(['test', 'Deny', 'omen', 'Default']);

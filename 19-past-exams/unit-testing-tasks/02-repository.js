@@ -6,6 +6,7 @@ class Repository {
         let id = 0;
         this.nextId = function () {
             return id++;
+            // Here it first returns and then increments.
         }
     }
 

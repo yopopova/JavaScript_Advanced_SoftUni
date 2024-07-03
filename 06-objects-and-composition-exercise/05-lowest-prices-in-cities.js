@@ -5,6 +5,8 @@ function lowestPricesInCities(input) {
         let [town, product, price] = input.shift().split(' | ');
 
         if (products.filter(x => x.product === product).length > 0) {
+            // ^ If product length is greater than 0, it means we have it available.
+
             let obj = products.find(x => x.product === product);
 
             if (obj.price > Number(price)) {
@@ -22,3 +24,11 @@ function lowestPricesInCities(input) {
         console.log(`${product.product} -> ${product.price} (${product.town})`);
     }
 }
+
+lowestPricesInCities(['Sample Town | Sample Product | 1000',
+    'Sample Town | Orange | 2',
+    'Sample Town | Peach | 1',
+    'Sofia | Orange | 3',
+    'Sofia | Peach | 2',
+    'New York | Sample Product | 1000.1',
+    'New York | Burger | 10']);

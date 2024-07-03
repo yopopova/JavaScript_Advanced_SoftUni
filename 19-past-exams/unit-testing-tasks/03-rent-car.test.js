@@ -69,4 +69,6 @@ describe('Test the functionality of rentCar object', () => {
             assert.equal(rentCar.checkBudget(30, 1, 30), `You rent a car!`);
         });
     });
-})
+});
+
+// .\node_modules\.bin\mocha 03-rent-car.test.js

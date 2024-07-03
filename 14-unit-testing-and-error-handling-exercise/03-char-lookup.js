@@ -4,6 +4,7 @@ function lookupChar(string, index) {
     }
 
     if (string.length <= index || index < 0) {
+        // If 'string.length <= index', means index is negative.
         return "Incorrect index";
     }
 
