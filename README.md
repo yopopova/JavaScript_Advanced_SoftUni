@@ -15,6 +15,10 @@ In the 'JS Advanced' course, students get in-depth knowledge of the JavaScript l
 - Object-oriented programming
 - Functional programming
 
+## Note
+
+Please keep in mind that if you want to use the Unit Testing materials after downloading the repository, you should run the ``npm install`` command into your VS Code terminal to generate the ``node_modules`` folder.
+
 ## Certificate
 
 ![JS Advanced - January 2022 - Certificate](https://github.com/yopopova/JavaScript_Advanced_SoftUni/assets/59256039/8ac55ace-ad65-4eb9-9d1f-fe600b548a12)
